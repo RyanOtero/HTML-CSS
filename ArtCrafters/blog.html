@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>ArtCrafters</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="ArtCrafters: Where the Arts and Craftsmanship meet.">
+    <link rel="stylesheet" href="artcrafters.css">
+    <!--[if lt IE 9]>
+  <script src="html5shiv.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+    <script>
+    
+    function blogClick(date) {
+        var dt = document.getElementById("date")
+        var txt = document.getElementById("text")
+        var img = document.getElementById("image")
+
+        dt.innerHTML = date.innerHTML;
+        if  (date.innerHTML == '9/23/19') {
+            txt.innerHTML = 'We just finished up with this funky chandelier. Greg had come across some interesting wood scraps that gave him a little inspiration, so we scraped together some retro-looking Edison light fixtures and got to work. With a little ingenuity and some spare time, and some odds and ends, we made something cool. I particularly love how the different positions of the lights cast the variety of shadows on the ceiling. It came out nice and this small project was a lot of fun.';
+            img.src = 'chandelier.jpg';
+            }
+            
+        if  (date.innerHTML == '9/15/19') {
+            txt.innerHTML = "And the Garenth Gazebo is finally complete! We have been working on this project for a few weeks now. We have had a lot of setbacks. First there were permitting issues, then the wood The Garenth's had selected was on back order. We even had the bearings on our saw go out in the middle of the project. Sheesh!!! But luckily for us, the Garenths are an understanding couple and we were able to work through. It all came together in the end and that is what matters. They are happy and so are we.";
+            img.src = 'gazebo.jpg';
+        }
+        
+        if  (date.innerHTML == '9/7/19') {
+            txt.innerHTML = "Well, we finally made use of all the drop aluminum pipe we had left over from the aluminum railing job we did down at the docks. The local community college was looking for something unique to put infront of the new campus. And why wouln't we make a giant face out of pipe? All joking aside though, I think this project came out great and I know the administrators loved it.";
+            img.src = 'face.jpg';
+        }
+        
+        if  (date.innerHTML == '9/1/19') {
+            txt.innerHTML = 'Maria is at it again. This will be the fourth project we have done for her now. She is always hatching up a new idea for her home. We love that sort of creativity here. We worked with her on sketching up a design for her new fireplace. It came together well with the stonework. The fireplace kind of reminds me of an art deco style for some reason. Probably the clean, simple lines. Anyway, she was so happy with it, she took us out to dinner. Thanks Maria!';
+            img.src = 'fireplace.jpg';
+        }
+    }
+    
+    </script>
+    
+    <header>
+        <img src="logo.png" class="himg" alt="ArtCrafters Logo">
+    </header>
+    <main>
+        <div class="container">
+            <div class="col_1">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                    <li><a href="review.html">Reviews</a></li>
+                </ul>
+            </div>
+            <div class="col_2">
+                <h1>Blog</h1>
+                <img id="image" src="chandelier.jpg" class="shadow floatright maxW350 mar30 marT80" alt="Chandelier">
+                <h4 id="date">9/23/19</h4>
+                <p id="text">
+                    We just finished up with this funky chandelier. Greg had come across some interesting wood scraps that gave him a little inspiration, so we scraped together some retro-looking Edison light fixtures and got to work. With a little ingenuity and some spare time, and some odds and ends, we made something cool. I particularly love how the different positions of the lights cast the variety of shadows on the ceiling. It came out nice and this small project was a lot of fun.
+                </p>
+            </div>
+            <div class="col_4 bloglist">
+                <ul style="padding-left: 0;">
+                    <li><a href="#" onclick="blogClick(this); return false;">9/23/19</a></li>
+                    <li><a href="#" onclick="blogClick(this); return false;">9/15/19</a></li>
+                    <li><a href="#" onclick="blogClick(this); return false;">9/7/19</a></li>
+                    <li><a href="#" onclick="blogClick(this); return false;">9/1/19</a></li>
+                    
+
+                </ul>
+            </div>
+        </div>
+        <div class="footer">
+            Copyright &copy; 2019 ArtCrafters
+            <br><a href="mailto:ronin19587@yahoo.com" style="font-family: Verdana; color: black;">Ryan@Otero.com</a>
+        </div>
+    </main>
+</body>
